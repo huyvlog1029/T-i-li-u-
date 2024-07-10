@@ -1,0 +1,45 @@
+#include <iostream>
+#include <math.h>
+#include <cstdlib>
+#include <fstream> 
+#include <string.h>
+#include <ctime>
+#include <stdio.h>
+
+using namespace std;
+
+void luutext() 
+{
+	FILE *file=fopen("test.txt", "w"); 
+    fputs("cc dit me may", file ); 
+    fputs("lon", file ); 
+    
+   	
+}
+
+void doctext() 
+{
+	FILE *file=fopen("test.txt", "r"); 
+	char *s = "\n"; 
+	do 
+	{
+		char line[200]; 
+		s = fgets(line, 200,file); 
+		if (s==NULL) 
+			break; 
+		cout<<s<<endl ; 
+		
+	}while(true); 
+	
+    fclose(file); 
+
+}
+
+int main() {
+	
+	doctext(); 
+    
+    
+	return 0;
+} 
+
