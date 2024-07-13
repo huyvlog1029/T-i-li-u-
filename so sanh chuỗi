@@ -1,0 +1,44 @@
+#include <iostream>
+#include <math.h>
+#include <cstdlib>
+#include <fstream> 
+#include <string.h>
+#include <ctime>
+#include <stdio.h>
+#include <cmath>
+
+using namespace std; 
+
+int main() { 
+	char str1[500], str2[500]; 
+	strcpy(str1,"hello");
+	strcpy(str2,"hellp"); 
+	int kq= strcmp(str1,str2); 
+	
+	cout<<"kq = "<<kq<<endl; 
+	
+	if (kq ==0)
+	{	cout<<"s1 = s2"<<endl;	}
+	else if (kq <0)	
+	{	cout<<"s1 < s2"<<endl; 	}
+	else 
+	{	cout<<"s1 > s2"<<endl;	}
+	// ki la 
+	char s1[500], s2[500]; 
+	strcpy(s1,"cai du ma may!");
+	strcpy(s2,"cai du me!");
+	int kq2= strncmp(str1,str2,5);
+	cout<<"kq = "<<kq2<<endl; 
+	if (kq2 ==0)
+	{	cout<<"s1 = s2"<<endl;	}
+	else if (kq2 <0)	
+	{	cout<<"s1 < s2"<<endl; 	}
+	else 
+	{	cout<<"s1 > s2"<<endl;	}
+	
+	
+  return 0; 
+  
+  
+} 
+ 
