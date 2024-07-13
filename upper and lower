@@ -1,0 +1,36 @@
+#include <iostream>
+#include <math.h>
+#include <cstdlib>
+#include <fstream> 
+#include <string.h>
+#include <ctime>
+#include <stdio.h>
+#include <cmath>
+
+using namespace std; 
+
+int main() { 
+	
+	char str1[] = "ofqjbfjqiri qi"; 
+	int n= strlen(str1);
+	for (int i=0; i <n; i++)
+	{
+		char c = str1[i];
+		putchar(toupper(c));
+	}
+	
+	cout<<"\n"	; 
+	char str2[] = "IB QBFB QBFB"; 
+	int n1= strlen(str2);
+	for (int i=0; i <n1; i++)
+	{
+		char d = str2[i];
+		putchar(tolower(d));
+	}
+	
+	
+  return 0; 
+  
+  
+} 
+ 
